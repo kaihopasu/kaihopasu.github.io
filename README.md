@@ -1,2 +1,2 @@
-# kaihopasu.github.io
-Kaihopasu Org
+# KP-Website
+Website design and repository
