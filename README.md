@@ -1,2 +1,1 @@
-# KP-Website
-Website design and repository
+kaihopasu.org
