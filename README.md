@@ -1,2 +1,2 @@
 # kaihopasu.github.io
-Kaihopasu Org
+Kaihopasu Org is path to emancipation
