@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kaihopasu | Experience stories</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+/*Lines between sections*/
+hr.fancy-line { 
+    border: 0; 
+    height: 5px;
+
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+body, hr.fancy-line:after {
+    background: #f4f4f4;
+}
+
+
+  /*Modal*/
+
+  body .modal-content {
+    /* new custom width */
+    width: 350px;
+    height: 64px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    
+}
+
+/*Lines between sections*/
+hr.fancy-line { 
+    border: 0; 
+    height: 5px;
+
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+body, hr.fancy-line:after {
+    background: #f4f4f4;
+}
+  body {
+      font-family: "georgia";
+      font-size: 15px;
+      color: #000;
+      margin-right: 60px;
+      margin-left: 60px;
+      line-height: 200%;
+  }
+
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #000;
+  }
+  .container {
+      padding: 1px 1px;
+  }
+  
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .nav-tabs li a {
+      color: #000000;
+  }
+    
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #FFFFFF;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #000000;
+
+  }
+  .navbar-nav li a:hover {
+      color: #000000   !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #000000 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+        background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->    
+      <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #FFFFFF; border-color: #fffcfc;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="newhomepage.html">
+              <img src="images/KPLOGO_123.jpg" alt="Kaiho Pasu" style="width: 170px;height: 27px;align=;" top";="">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav nav-left">
+        <li class="active"><a href="newhomepage.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a href="teams.html">Projects</a></li>
+            <ul class="dropdown">
+              <li><a href="sole.html" style="font-size: 12px">SOLE</a></li>
+              <li><a href="hikonoka.html" style="font-size: 12px">Hiko Noka</a></li>
+              <li><a href="thenexus.html" style="font-size: 12px">The Nexus</a></li>
+             </ul>
+                <li class="dropdown-submenu"><a href="teams.html">Teams</a></li>
+            <ul class="dropdown">
+              <li><a href="keikakuchimu.html" style="font-size: 12px">Keikaku Chimu</a></li>
+              
+              <li><a href="captianfantastic.html" style="font-size: 12px">Captain Fantastic</a></li>              
+
+              <li><a href="sosharu.html" style="font-size: 12px">Sosharu</a></li>              
+
+              <li><a href="ichibachosa.html" style="font-size: 12px">Ichibachosa</a></li>
+
+              <li><a href="kyoikuchimu.html" style="font-size: 12px">Kyoiku Chimu</a></li>
+              
+              <li><a href="vanakkamalexa.html" style="font-size: 12px">Vanakkam Alexa</a></li>
+              
+              </ul>
+          </ul>
+        </li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="experiencestories.html">Experience stories</a></li>
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+
+<br>
+  <h1>Experience Stories</h1>
+  <br>
+
+  <!--Shyaam-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em> Shyaamlal N N</em>
+      
+      <img src="images/Keikaku Chimu/Shyaamlal.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">Working in KP has been a great opportunity and a magnificent learning journey, both personally and professionally. Is there anything better than working with your friends on a cause you like? I would let you answer that question ;) KP has provided a platform where I can learn, create and test out any passion project that I'm interested in. The team has really top notch folks and interacting with the members is an incredible and easy way to see how bright minds work. I am able to see how operating in KP is helping me see my strengths and weaknesses, and, provides short loops to receive feedback on my blindspots. People keep talking about agile work culture and paradigm shifts these days, though I'm not sure how many organizations truly implement the philosophy of being truly agile. From the little I know, KP is amazingly agile and anyone who is committed to put the work and align to our values, it's gonna be a treat.</p>
+
+    </div>
+    </div>
+
+<hr class="fancy-line"></hr>
+
+<!--Priyal-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em> Priyal G</em>
+      
+      <img src="images/Keikaku Chimu/Priyal.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">Being a teacher a quote that always has stayed with me is "Experience is the 
+                teacher of all things". I strongly believe in this and the past 8 months in KP 
+                have been similar. While trying to understand how I could contribute to the 
+                project and experimenting with different things I have learnt a lot on the way 
+                about myself, about how much of a difference we could make through 
+                technology for our vision for children. I also have understood team dynamics 
+                with my interactions with diverse individuals. KP is a space where I can be the 
+                way I like being that is just open to learning at every point of time.
+</p>
+
+    </div>
+    </div>
+
+<hr class="fancy-line"></hr>
+<!--Badri-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em> Badri</em>
+      
+      <img src="images/Keikaku Chimu/Badri.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">Being an highly energetic individual, my learning curve in KP has been very exponential and it helped me build skills that revolves around project management and leadership. I got an opportunity to understand the dynamics of team work and it pushed my analytical thinking to the next level. The enthusiastic peer group keeps me motivated to think out of the box and help in building <br> a solid framework in approaching any problem we take up. In a nutshell               We stay mad and foolish.</p>
+
+
+    </div>
+    </div>
+
+<hr class="fancy-line"></hr>
+<!--Adithi-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Adithi</em>
+      
+      <img src="images/Keikaku Chimu/Adithi.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">My experience in KP so far can be expressed in one word "Exposure". 
+                Only when one realizes that there are infinite options are they willing to 
+                try out a finite number of options! KP has helped me gain skills but 
+                aboveall it has taught me that I can carve a path for myself.
+</p>
+
+
+    </div>
+    </div>
+<hr class="fancy-line"></hr>
+<!--Atom-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Anoorag</em>
+      
+      <img src="images/Drona/Anoorag.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">My experience has been great. We have created a knowledgebase 
+                which can be used by any individual to design his own drone with 
+                limited research and time. I'm glad that I'm glad that I'm part of such an 
+                enthusiastic group who see the problems of our country like I do and 
+                not only want to empower those farmers but also others who want to be 
+                partrevolution to bring change.
+
+</p>
+
+
+    </div>
+    </div>
+
+<hr class="fancy-line"></hr>
+
+    <!--The Nexus-->
+    <!--Varsha-->
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Varsha K</em>
+      
+      <img src="images/Keikaku Chimu/Varsha.jpg" class="img-circle person" alt="Member1" width="175" height="175">
+
+      
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">They say " A mind that is stretched by a new experience can never go 
+                back to its old dimensions", KP for me is a package of multiple of such 
+                experiences where I get to learn, co-create and rejoice with a team 
+                that has become my family. 
+</p>
+
+    </div>
+    </div>
+<hr class="fancy-line"></hr>
+<!--Sai Vinai-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>SaiVinai R</em>
+      
+      <img src="images/Sosharu/SaiVinai.jpg" class="img-circle person" alt="Member1" width="175" height="175">
+
+
+      </p>
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">Learning is been immense with all the research I have done. Been 
+                  exposed to different blocks of entrepreneurship and business. 
+                  Encouragement is always been overwhelming and inspiring. So glad 
+                  to be part of it. Looking forward to   do a lot more.
+ 
+</p>
+
+    </div>
+    </div>
+<hr class="fancy-line"></hr>
+<!--Vasu-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Vasu</em>
+      
+      <img src="images/Drona/Vasu.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">I'm a mechanical engineer and in our future
+                 am now studying energy. At KP I'm 
+                working with a group to design a drone from scratch. I'm working on 
+                both mechanical design as well as integrating different systems
+
+
+</p>
+</div>
+</div>
+<br><br>
+    
+<hr class="fancy-line"></hr>
+  
+<!--Sanjeev-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Sanjeev</em>
+      
+      <img src="images/sosharu/Sanjeev.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">My experience for the past few months has been amazing! For me, it's about applying what I've learned so far and learning new things through experiences. Kaiho Pasu is giving me new experiences everyday. Always wondered how it'd feel like to be part of a great thing right from the start. Few years from now, I think I'll know exactly how that feels
+
+</p>
+</div>
+</div>
+
+<br><br>
+ 
+
+<hr class="fancy-line"></hr>
+
+
+<!--Nivi-->
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Nivi</em>
+      
+      <img src="images/valexa/Nivi.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style="">To identify, analyse different platforms, networks and medium which are relevant to KP and its functions to promote, deliver and pitchin the spirit of KP in those.
+
+</p>
+</div>
+</div>
+
+<br><br>
+ 
+
+<hr class="fancy-line"></hr>
+
+
+<!--RAji-->
+
+
+<div class="row">
+    <div class="col-sm-2">
+      <p><em>Raji</em>
+      
+      <img src="images/nexus/Raji.jpg" class="img-circle person" alt="Shyaamlal" width="175" height="175">
+
+      </div>
+
+<div class="col-sm-10" class="">
+<br>
+    <p style=""> Working in KP made me to think beyond my work, I've started to learn new technologies. I've introduced to group of enthusiastic techies who wants to pour their ideas to world. Really feels good when we work/follow the passion along with friends, thats what i'm experiencing now :) 
+
+</p>
+</div>
+</div>
+
+<br><br>
+ 
+
+<hr class="fancy-line"></hr>
+
+
+<!--Adding footer container-->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+     
+  <p><em> Live the future!!!</em></p>
+<em>mail id</em>
+</footer>
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kaiho Pasu|Home</title>
+  <meta charset="utf-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <style>
+
+/*video carousel*/
+.video {
+            width: 100%;
+            border: 1px solid black;
+        }
+        .wrapper{
+            display:table;
+            width:auto;
+            position:relative;
+            width:50%;
+        }
+        .playpause {
+            background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+            background-repeat:no-repeat;
+            width:50%;
+            height:50%;
+            position:absolute;
+            left:0%;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            margin:auto;
+            background-size:contain;
+            background-position: center;
+        }
+
+/*Lines between sections*/
+hr.fancy-line { 
+    border: 0; 
+    height: 5px;
+
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+body, hr.fancy-line:after {
+    background: #FFFFFF;
+}
+  body {
+      font-family: "georgia";
+      font: 600 30px/2.8;
+      color: #000;
+      font-weight: bold;
+      line-height: 200%;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 10px 10px;
+  }
+  
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+
+  .nav-tabs li a {
+      color: #FFFFFF;
+  }
+    
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #FFFFFF;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #000000;
+
+  }
+  .navbar-nav li a:hover {
+      color: #000000   !important;
+  }
+  .navbar-nav li.active a {
+      color: #FFFFFF !important;
+      background-color: #FFFFFF !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+        background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  } 
+
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--Navbar-->    
+      <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #FFFFFF; border-color: #fffcfc;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="newhomepage.html">
+              <img src="images/KPLOGO_123.jpg" alt="Kaiho Pasu" style="width: 170px;height: 27px;align=;" top";="">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav nav-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a href="teams.html">Projects</a></li>
+            <ul class="dropdown">
+              <li><a href="sole.html" style="font-size: 12px">SOLE</a></li>
+              <li><a href="hikonoka.html" style="font-size: 12px">Hiko Noka</a></li>
+              <li><a href="nexus.html" style="font-size: 12px">The Nexus</a></li>
+             </ul>
+                <li class="dropdown-submenu"><a href="teams.html">Teams</a></li>
+            <ul class="dropdown">
+              <li><a href="keikakuchimu.html" style="font-size: 12px">Keikaku Chimu</a></li>
+              <li><a href="kyoikuchimu.html" style="font-size: 12px">Kyoiku Chimu</a></li>
+              <li><a href="vanakkamalexa.html" style="font-size: 12px">Vanakkam Alexa</a></li>
+              <li><a href="captainfantastic.html" style="font-size: 12px">Captain Fantastic</a></li>
+              <li><a href="sosharu.html" style="font-size: 12px">Sosharu</a></li>
+              <li><a href="ichibachosa.html" style="font-size: 12px">Ichibachosa</a></li>
+             </ul>
+          </ul>
+        </li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="experiencestories.html">Experience stories</a></li>
+        </ul>
+      
+    </div>
+  </div>
+</nav>
+
+                            
+          <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide" style="height: 70%">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()" style="background-color: white">
+                     
+                    <source src="movie/movie1_carousel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+               <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+                     
+                    <source src="movie/movie2_carousel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                 <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+                     
+                    <source src="movie/movie3_carousel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center" style="padding-left: 5em; padding-right: 5em; ">
+  
+<h2>Vision</h2>
+
+<br>
+  
+ <h3>Kaiho Pasu – The path to emancipation. </h3> 
+
+    <p><em>Our vision is to be able to leverage technology to solve the so called wicked social problems out there in different spheres that include but not limited to Education and Agriculture.</em></p>
+    
+    <p>
+    In doing so we want to build our-selves into a world class team that has the right skillset. We are an ambitious bunch and are gung-ho in our approach to solve problems with a root first approach. <em>
+    The outcome we seek is a strong platform in which folks of any background that have that burning desire can make a success of themselves and in the process emancipate a lot more.</em><br><br>
+    
+    We are very positive and hopeful of the future ahead and look forward to working, nurturing, learning and helping to build the communities around us.</p>
+
+</p>
+
+  <br>
+      <hr class="fancy-line"/></hr>
+ 
+
+  <!--Adding video and text
+   <div class="row">
+      <div class="col-sm-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+        </div>
+    </div>
+    <div class="col-sm-6">    
+      <div class="container-fluid"> 
+          <p>Where a web site must support basic mobile devices that lack JavaScript, browser ("user agent") detection (also called "browser sniffing") and mobile device detection are two ways of deducing if certain HTML and CSS features are supported (as a basis for progressive enhancement)—however, these methods are not completely reliable unless used in conjunction with a device capabilities database.
+          </p>        
+    </div>
+</div>
+  </div> -->
+
+
+<!--Adding footer container-->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+     
+  <p><em> Live the future!!!</em></p>
+  <p><em>kaihopasu@gmail.com</em></p></footer></div></br>
+</footer>
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+
+</body>
+</html>
