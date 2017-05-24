@@ -231,7 +231,7 @@ body, hr.fancy-line:after {
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()" style="background-color: white">
+                <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()" style="background-color: white">
                      
                     <source src="movie/movie1_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -239,7 +239,7 @@ body, hr.fancy-line:after {
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-               <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+               <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
                      
                     <source src="movie/movie2_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -247,7 +247,7 @@ body, hr.fancy-line:after {
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                 <video width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+                 <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
                      
                     <source src="movie/movie3_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -256,11 +256,11 @@ body, hr.fancy-line:after {
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none">
-            <span class="icon-prev"></span>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none" onclick="pauseVid()">
+            <span class="icon-prev"> </span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none">
-            <span class="icon-next"></span>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style=" z-index: 10; height: 20%; top: 40%; color: black; background: none" onclick="pauseVid()">
+            <span class="icon-next"> </span>
         </a>
 
     </header>
@@ -313,7 +313,17 @@ body, hr.fancy-line:after {
   <p><em>kaihopasu@gmail.com</em></p></footer></div></br>
 </footer>
 
+<script> 
+var vid = document.getElementById("myVideo"); 
 
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+} 
+</script>
 
 <script>
 $(document).ready(function(){
