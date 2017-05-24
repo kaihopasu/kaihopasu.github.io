@@ -231,15 +231,15 @@ body, hr.fancy-line:after {
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()" style="background-color: white">
+                <video id="myVideo1" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()" style="background-color: white">
                      
                     <source src="movie/movie1_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="item">
+            <div class="item" >
                 <!-- Set the second background image using inline CSS below. -->
-               <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+               <video id="myVideo2" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
                      
                     <source src="movie/movie2_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -247,7 +247,7 @@ body, hr.fancy-line:after {
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                 <video id="myVideo" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
+                 <video id="myVideo3" width="100%" height="100%" align="middle" controls="controls" onclick="this.play()">
                      
                     <source src="movie/movie3_carousel.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -314,15 +314,22 @@ body, hr.fancy-line:after {
 </footer>
 
 <script> 
-var vid = document.getElementById("myVideo"); 
+var vid;
 
 function playVid() { 
-    vid.play(); 
-} 
+    myVideo1.play(); 
+    myVideo2.play();
+    myVideo3.play();
+}
 
 function pauseVid() { 
-    vid.pause(); 
+  //alert(videowig);
+    myVideo3.pause(); 
+        myVideo2.pause();
+            myVideo1.pause();
 } 
+
+
 </script>
 
 <script>
