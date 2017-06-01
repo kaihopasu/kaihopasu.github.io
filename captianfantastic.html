@@ -159,10 +159,8 @@ body, hr.fancy-line:after {
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" background="images/background.jpg">
-
-    <!--Navbar-->    
-          <!--Navbar-->    
-     <nav class="navbar navbar-default" role="navigation">
+     <!--Navbar-->    
+     <nav class="navbar navbar-default" role="navigation" style="background-color: white">
         <div class="container-fluid">
             <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
@@ -171,39 +169,76 @@ body, hr.fancy-line:after {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
-                </button>
-                
+                </button>                
             </div>
+
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav nav-left">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="sole.html" style="font-size: 12px">SOLE</a></li>
-                            <li><a href="hikonoka.html" style="font-size: 12px">Hiko Noka</a></li>
-                            <li><a href="thenexus.html" style="font-size: 12px">The Nexus</a></li>
 
-                        </ul>
+                    <li style="margin-left: 10px">
+                        <div class="btn-group navbar-btn" >
+                          <a href="index.html" class="btn" style="font-weight: bold; color: #777; border-color: white;">Home</a>
+                          
+                      </div>
                     </li>
-                    <li class="active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="teams.html">Teams<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="keikakuchimu.html" style="font-size: 12px">Keikaku Chimu</a></li>
-                            <li><a href="kyoikuchimu.html" style="font-size: 12px">Kyoiku Chimu</a></li>
-                            <li><a href="vanakkamalexa.html" style="font-size: 12px">Vanakkam Alexa</a></li>
-                            <li><a href="captianfantastic.html" style="font-size: 12px">Captain Fantastic</a></li>
-                            <li><a href="sosharu.html" style="font-size: 12px">Sosharu</a></li>
-                            <li><a href="ichibachosa.html" style="font-size: 12px">Ichibachosa</a></li>
-                        </ul>
+
+                    <li style="margin-left: 10px">
+                        <div class="btn-group navbar-btn" >
+                          <a href="teams.html" class="btn" style="font-weight: bold; color: #777; border-color: white;">Projects</a>
+                          <button data-toggle="dropdown" class="btn btn-defult dropdown-toggle" style="background-color: white;"><span class="caret" style="background-color: white;"></span></button>
+                          <ul class="dropdown-menu">
+                              <li><a href="sole.html">SOLE</a></li>
+                                  <li class="divider"></li>
+                              <li><a href="hikonoka.html">Hiko Noka</a></li>
+                                  <li class="divider"></li>
+                              <li><a href="thenexus.html">The Nexus</a></li>
+
+                      <!--<li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>-->
+                          </ul>
+                      </div>
                     </li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li ><a href="experiencestories.html">Experience stories</a></li>
+
+                    <li style="margin-left: 10px">
+                  <div class="btn-group navbar-btn" >
+                    <a href="teams.html" class="btn active" style="font-weight: bold; color: #777; border-color: white;">Teams</a>
+                    <button data-toggle="dropdown" style="background-color: white" class="btn btn-defult dropdown-toggle active"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="keikakuchimu.html" style="font-size: 12px">Keikaku Chimu</a></li>
+                         <li class="divider"></li>   
+                      <li><a href="kyoikuchimu.html" style="font-size: 12px">Kyoiku Chimu</a></li>
+                        <li class="divider"></li>
+                      <li><a href="vanakkamalexa.html" style="font-size: 12px">Vanakkam Alexa</a></li>
+                        <li class="divider"></li>
+                      <li><a href="captianfantastic.html" style="font-size: 12px">Captain Fantastic</a></li>
+                        <li class="divider"></li>
+                      <li><a href="sosharu.html" style="font-size: 12px">Sosharu</a></li>
+                        <li class="divider"></li>
+                      <li><a href="ichibachosa.html" style="font-size: 12px">Ichibachosa</a></li>
+
+                     <!-- <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>-->
+                    </ul>
+                    <li style="margin-left: 10px">
+                        <div class="btn-group navbar-btn" >
+                          <a href="blogs.html" class="btn" style="font-weight: bold; color: #777; border-color: white;">Blogs</a>
+                        </div>
+                    </li>
+
+
+                    <li style="margin-left: 10px">
+                        <div class="btn-group navbar-btn" >
+                         <a href="experiencestories.html" class="btn" style="font-weight: bold; color: #777; border-color: white;">Experience Stories</a>                      </div>
+                    </li>
                 </ul>
 
             </div>
         </div>
     </nav>
+    
+
+
+
 
 <div class="container">
     <h1 style="text-align: -webkit-center;"> Captain Fantastic</h1>  
