@@ -165,7 +165,10 @@ body, hr.fancy-line:after {
       color: #777;
       text-decoration: none;
   } 
-
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #FFF;
+}
 
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -180,50 +183,85 @@ body, hr.fancy-line:after {
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--navbar-->
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
 
-    <!--Navbar-->    
-     <nav class="navbar navbar-default" role="navigation">
+            </button>
+            
+        </div>
+        <div class="navbar-collapse collapse">
+
+
         <div class="container-fluid">
-            <div class="navbar-header">
+       
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="Kaiho Pasu" style="width: 170px;height: 27px;align=;" top";=""></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
+            
+            <ul class="nav navbar-nav navbar-left"> 
+                <li style="margin-left: 10px">
+                  <div class="btn-group navbar-btn" >
+                    <button class="btn btn-defult" style="background-color: white">Projects</button>
+                    <button data-toggle="dropdown" style="background-color: white" class="btn btn-defult dropdown-toggle"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">SOLE</a></li>
+                      <li><a href="#">Hiko Noka</a></li>
+                      <li><a href="#">The Nexus</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <ul class="nav navbar-nav navbar-left"> 
+                <li style="margin-left: 10px">
+                  <div class="btn-group navbar-btn" >
+                    <button class="btn btn-defult" style="background-color: white">Teams</button>
+                    <button data-toggle="dropdown" style="background-color: white" class="btn btn-defult dropdown-toggle"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Team1</a></li>
+                      <li><a href="#">Team2</a></li>
+                      <li><a href="#">Team3</a></li>
+                      <li><a href="#">Team4</a></li>
+                      <li><a href="#">Team5</a></li>
+                      <li><a href="#">Team6</a></li>
+                     <!-- <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>-->
+                    </ul>
+                  </div>
+                </li>
+
                 
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav nav-left">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="sole.html" style="font-size: 12px">SOLE</a></li>
-                            <li><a href="hikonoka.html" style="font-size: 12px">Hiko Noka</a></li>
-                            <li><a href="thenexus.html" style="font-size: 12px">The Nexus</a></li>
 
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="teams.html">Teams<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="keikakuchimu.html" style="font-size: 12px">Keikaku Chimu</a></li>
-                            <li><a href="kyoikuchimu.html" style="font-size: 12px">Kyoiku Chimu</a></li>
-                            <li><a href="vanakkamalexa.html" style="font-size: 12px">Vanakkam Alexa</a></li>
-                            <li><a href="captianfantastic.html" style="font-size: 12px">Captain Fantastic</a></li>
-                            <li><a href="sosharu.html" style="font-size: 12px">Sosharu</a></li>
-                            <li><a href="ichibachosa.html" style="font-size: 12px">Ichibachosa</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li ><a href="experiencestories.html">Experience stories</a></li>
-                </ul>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div></div>
+</header>
 
-            </div>
-        </div>
-    </nav>
+<br><br><br>
+<div class="col-md-8">
+    <!-- bootstrap tabs -->
+<div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href data-target="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href data-target="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">home ...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">profile...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">messages...</div>
+  </div>
+</div>
+<!-- /bootstrap tabs -->
+</div>
+
+
 
 
 <div id="band" class="container text-center">
