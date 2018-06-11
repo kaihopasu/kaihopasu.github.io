@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <title>Kaiho Pasu | CaptainFantastic</title>
+<!--Adding Social media-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <!--Adding Canonical links-->
   <link rel="canonical" href="http://kaihopasu.org/captianfantastic.html">
 
@@ -28,6 +32,40 @@
   
 
   <style>
+/*styles for social media buttons*/
+body {margin:0;height:2000px;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
 /*center*/
 @media only screen 
 and (min-device-width : 375px) 
@@ -62,7 +100,20 @@ and (max-device-width : 667px) {
 
         }
 
+@media only screen and (max-device-width: 870px) {
 
+        .icon-bar{
+          display: none;
+        }
+
+    }
+    @media only screen and (min-device-width: 994px) and (max-device-width: 1088px) {
+
+ .icon-bar{
+          display: none;
+        }
+
+    }
 
 .center-block {
     display: block;
@@ -190,9 +241,7 @@ body, hr.fancy-line:after {
 
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b1dd3a073e0f2001144834b&product=sticky-share-buttons' async='async'></script>
 </head>
-
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" background="images/background.jpg">
@@ -344,9 +393,8 @@ Have a strong reward system which improves team morale through recognition, effe
     </div>
 
     <hr class="fancy-line"/></hr>
-    
 
-    <!--events and Policies and download
+    <!--events and Policies
     <div class="row"> 
       <div class="col-sm-offset-2 col-sm-4" style="padding-left: 80px;"> 
         <iframe src="https://calendar.google.com/calendar/embed?src=vv66onosrqpdbsar5tnofnj924%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="250" height="250" frameborder="0" scrolling="no"></iframe>
@@ -367,9 +415,14 @@ Have a strong reward system which improves team morale through recognition, effe
       </div>
 
 
-    </div>
+    </div>-->
+<!--Adding social media buttons-->
+<div class="icon-bar">
 
-    <hr class="fancy-line"/></hr>-->
+        
+        <a href="https://medium.com/kaihopasu" class="linkedin" style="background: black;"><b>M</b></a>
+        <a href="https://www.youtube.com/channel/UCuj1YYhseDGIlOp3CJ3rD1Q/" class="youtube"><i class="fa fa-youtube"></i></a> 
+      </div>
 
 <!--images-->
 
@@ -464,3 +517,14 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
